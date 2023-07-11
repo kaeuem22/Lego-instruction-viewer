@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: #F7EBE8;
+    height: 100vh;
+}
+
+dialog #manuais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+dialog #close_btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+dialog #splice{
+    margin-top: 0.4rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+dialog p{
+    margin: 0;
+    padding: 0;
+}
+
+.hide{
+    display: none;
+}
+
+iframe{
+    margin: 0.4rem;
+    max-width: 400%;
+    min-width: 40%;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 0.4rem;
+}
+
+header{
+    background-image: url("Banner.png");
+    padding: 9rem 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+    color: rgb(243, 243, 243);
+    font-size: 2rem;
+}
+
+#botões{
+    margin: 2rem;
+    display: none;
+    justify-content: center;
+}
+
+button{
+    margin: 0  0.2rem;
+    background-image: linear-gradient(90deg, rgb(105, 105, 105), rgb(105, 105, 105));
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: fit-content;
+    font-size: 2rem;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    transition: color 250ms ease, background-size 300ms ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+#dir{
+    background-position: left;
+}
+
+#esq{
+    background-position: right;
+}
+
+button:hover{
+    background-size: 100% 100%;
+    color: white;
+}
+
+
+#start_BTN{
+    background-image: linear-gradient(90deg, lightgray, lightgray);
+    background-size: 100% 100%;
+    background-color: red;
+}
+
+#start_BTN:hover{
+    background-color: red;
+    background-size: 0% 100%;
+    color: white;
+}
+
+#start{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+}
+
+dialog{
+    padding: 2rem;
+    margin: auto;
+    width: 70rem;
+    height: fit-content;
+    background-color: #ececec;
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 1em rgb(0 0 0 / 1);
+}
+
+
+dialog::backdrop{
+    background: rgb(0 0 0 / 0.6);
+}
+
+#apre{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 0.7rem;
+    margin: 1rem 4rem;
+    flex-direction: column;
+}
+
+img{
+    width: 30%;
+    border-radius: 8px;
+}
+
+svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+#fechar{
+    border-radius: 50%;
+}
+
+#start{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+strong{
+    font-weight: bolder;
+    color: #D36582;
+}
+
+p{
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: 2rem;
+}
+
+.options{
+    text-align: center;
+}
+
+@media (max-width:700px){
+    img{
+        width: 90%;
+    }
+
+    #apre{
+        margin: 1rem 2rem;
+    }
+
+    #apre p, dialog p{
+        text-align: center;
+    }
+    
+    dialog #dir, dialog #esq{
+        padding: 0;
+        margin: 0;
+        height: 70vh;
+    }
+
+    dialog{
+        margin: 1rem;
+        width: 100vw;
+        height: fit-content;
+    }
+
+    iframe{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 70vh;
+    }
+
+    .double{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
