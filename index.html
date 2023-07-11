@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Lista.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Lego instruction viewer</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lego instruction viewer</h1>
+    </header>
+    <main>
+
+        <Dialog id="dialog">
+            <section id="manuais">
+                
+            </section>
+        </Dialog>
+    
+        <section id="apre"></section>
+    
+        <section id="botões">
+            <button onclick="subtrair()" id="esq"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+              </svg></button>
+
+              <button onclick="modal()" id="expand"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+              </svg></button>
+
+            <button onclick="adicionar()" id="dir"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+              </svg></button>
+
+        </section>
+
+        <section id="start">
+            <button onclick="start()" id="start_BTN">Começar</button>
+       
+
+            <p>
+                Esse site tem como objetivo apresentar de maneira organizada os meus manuias de LEGO salvos no google drive, além de ser uma maneira interesante de aprofundar meus conhecimentos em JavaScript e CSS com elementos como <strong>Dialog, showModal(), close(), transition, bacgroundk-size</strong> e <strong>bacgroundk-gradient</strong>
+            </p>
+        </section>
+    </main>
+
+
+    <iframe frameborder="0" class="hide"></iframe>
+
+</body>
+<!-- Por: Murillo Kauê -->
+</html>
