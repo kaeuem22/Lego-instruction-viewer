@@ -64,7 +64,7 @@ function carregar() {
     if (check == true) {
         if (lista[manualAtual].partes == 1) {
             manuais.innerHTML = `<div id="close_btn"> 
-            ${manualAtual+1} / ${lista.length+1}
+            ${manualAtual+1} / ${lista.length}
 
             <p>${lista[manualAtual].nome}</p>
 
@@ -89,7 +89,7 @@ function carregar() {
 
         } else if (lista[manualAtual].partes == 2) {
             manuais.innerHTML = `<div id="close_btn"> 
-            ${manualAtual+1} / ${lista.length+1}
+            ${manualAtual+1} / ${lista.length}
 
             <p>${lista[manualAtual].nome}</p>
 
